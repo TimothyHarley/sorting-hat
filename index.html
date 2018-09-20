@@ -20,14 +20,16 @@
     </div>
 <!-------------------- /Jumbotron ------------------------->
 <!----------------- Sorting Hat Form ---------------------->
-    <form id="hatForm" style="display:none">
-        <div class="form-group mx-auto" style="width: 500px">
-            <label for="exampleInputEmail1">Enter First Year's Name</label>
-            <input class="form-control" id="exampleInputEmail1"  placeholder="Harry Potter">
-            <small id="emailHelp" class="form-text text-muted">Student:</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Sort</button>
-    </form>
+    <div id="hatForm" class="bg-light mx-auto" style="display:none; width: 500px">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Enter First Year's Name</label>
+                <small id="emailHelp" class="form-text text-muted">Student:</small>
+                <input class="form-control mx-auto" id="exampleInputEmail1" style="width: 33%" placeholder="Harry Potter">
+            </div>
+            <button id="sortBtn" type="submit" class="btn btn-primary">Sort</button>
+        </form>
+    </div>
 <!---------------- /Sorting Hat Form ---------------------->
 
 <!-------------------- JavaScript ------------------------->
