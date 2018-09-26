@@ -10,29 +10,29 @@
 <body>
 <!--------------------- Jumbotron ------------------------>
     <div class="jumbotron" id="jumbotron">
-        <h1 class="display-4">Hello, and Welcome to Hogwarts!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4">Welcome to Hogwarts!</h1>
+        <p class="lead">Hello!  Before we get started, I'd like to say a few words.  And here they are: Nitwit! Blubber! Oddment!  Now, on to buisness. First Year Students must be sorted into a house.  Once Sorted, your house will be your home for the rest of your career here at Hogwarts.  If you are unhappy with the house that is chosen for you, then you are welcome to expel yourself.</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>Please type the name of the student that is to be sorted, and click 'Sort'.  The sorting hat will take care of the rest!</p>
         <p class="lead">
-            <a class="startButton btn btn-primary btn-lg" id="startButton" href="#" role="button">Learn more</a>
+            <a class="startButton btn btn-primary btn-lg" id="startButton" href="#" role="button">Let's get started</a>
         </p>
     </div>
 <!-------------------- /Jumbotron ------------------------->
 <!----------------- Sorting Hat Form ---------------------->
-    <div id="hatForm" class="bg-light mx-auto" style="display:none; width: 500px">
-        <form>
+    <div id="hatForm" class="bg-light mx-auto" style="display:none; width: 400px">
+        <form class="text-center">
             <div class="form-group">
                 <label for="exampleInputEmail1">Enter First Year's Name</label>
                 <small id="emailHelp" class="form-text text-muted">Student:</small>
                 <input class="form-control mx-auto" id="exampleInputEmail1" style="width: 33%" placeholder="Student Name">
             </div>
-            <button id="sortBtn" type="submit" class="btn btn-primary">Sort</button>
+            <button id="sortBtn" type="submit" class="btn btn-primary" style="width: 33%">Sort</button>
         </form>
     </div>
 <!---------------- /Sorting Hat Form ---------------------->
 <!------------------ Card Container ----------------------->
-    <div id="cardContainer" class='d-flex flex-wrap'></div>
+    <div id="cardContainer" class='d-flex flex-wrap justify-content-center'></div>
 <!----------------- /Card Container ----------------------->
 
 <!-------------------- JavaScript ------------------------->
