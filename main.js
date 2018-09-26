@@ -37,10 +37,10 @@ sortBtn.addEventListener('click', (e) => {
 
 const buildNewStudentCard = (studentName) => {
     let domString = `<div class="card w-25 m-2">
-    <div class="card-body">
+    <div class="card-body text-center">
       <h5 class="card-title">${studentName}</h5>
       <p class="card-text">${sorted()}</p>
-      <button href="#" class="btn btn-danger deleteButton">Expel</button>
+      <button href="#" class="btn btn-dark deleteButton">Expel</button>
     </div>
   </div>`;
     printToDom(domString, 'cardContainer')
