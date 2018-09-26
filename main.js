@@ -11,7 +11,18 @@ const printToDom = (stringToPrint, WhereToPrint) => {
 
 const sorted = () => {
     return fourHouses[Math.floor(Math.random() * 4)];
-}    
+};
+
+const activateExpels = () => {
+    const expelButtons = document.getElementsByClassName('deleteButton');
+    for (let i = 0; i < expelButtons.length; i++){
+        const element = expelButtons[i];
+        element.addEventListener('click', (e) => {
+            expelStudent = e.target.parentNode.parentNode;
+            expelStudent.remove();
+        })
+    }
+}
 
 
 startButton.addEventListener('click', (e) => {
@@ -32,6 +43,6 @@ const buildNewStudentCard = (studentName) => {
       <button href="#" class="btn btn-danger deleteButton">Expel</button>
     </div>
   </div>`;
-
     printToDom(domString, 'cardContainer')
+    activateExpels();
 }
