@@ -10,7 +10,7 @@ const printToDom = (stringToPrint, WhereToPrint) => {
 };
 
 const sorted = () => {
-    return fourHouses[Math.floor((Math.random() * 4) +1)];
+    return fourHouses[Math.floor(Math.random() * 4)];
 }    
 
 
@@ -22,14 +22,13 @@ startButton.addEventListener('click', (e) => {
 sortBtn.addEventListener('click', (e) => {
     buildNewStudentCard(studentName.value)
     studentName.value = '';
-    studentHouse = sorted();
 })
 
 const buildNewStudentCard = (studentName) => {
     let domString = `<div class="card w-25 m-2">
     <div class="card-body">
       <h5 class="card-title">${studentName}</h5>
-      <p class="card-text">${studentHouse}</p>
+      <p class="card-text">${sorted()}</p>
       <button href="#" class="btn btn-danger deleteButton">Expel</button>
     </div>
   </div>`;
