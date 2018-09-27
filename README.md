@@ -1,4 +1,4 @@
-# sorting-hat
+# Sorting Hat
 <br>
 
 ### About This App
