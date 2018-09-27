@@ -1,3 +1,4 @@
+// Variablels
 const startButton = document.getElementById('startButton');
 const jumbotron = document.getElementById('jumbotron');
 const hatForm = document.getElementById('hatForm');
@@ -5,6 +6,7 @@ const sortBtn = document.getElementById('sortBtn');
 const studentName = document.getElementById('exampleInputEmail1');
 const fourHouses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'];
 
+//Functions
 const printToDom = (stringToPrint, WhereToPrint) => {
     document.getElementById(WhereToPrint).innerHTML += stringToPrint;
 };
@@ -44,6 +46,7 @@ const houseColors = () => {
     }
 }
 
+//Event Listeners
 startButton.addEventListener('click', (e) => {
     jumbotron.remove();
     hatForm.style.display = 'block';
@@ -57,6 +60,7 @@ sortBtn.addEventListener('click', (e) => {
     studentName.value = '';
 })
 
+//Final Function that calls most of the other functions
 const buildNewStudentCard = (studentName) => {
     let domString = `<div class="card w-25 m-2 cardColor">
     <div class="card-body text-center">
